@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Ko Brendon Ahau</title>
+  <meta name="description" content="Get in touch." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="site-title">Ko Brendon Ahau</a>
+    <button class="menu-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="governance.html">Governance &amp; Leadership</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>Contact</h1>
+    <p>Get in touch</p>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+
+    <section class="section">
+      <!-- EDIT: Update the intro text and your email address -->
+      <p>Whether you're interested in research collaboration, speaking invitations, media enquiries, or just want to connect — feel free to reach out.</p>
+      <p>You can also email directly: <a href="mailto:hello@yourname.com">hello@yourname.com</a></p>
+    </section>
+
+    <section class="section contact-form">
+      <h2>Send a message</h2>
+
+      <!--
+        HOW TO MAKE THIS FORM ACTUALLY SEND EMAILS:
+        1. Go to https://formspree.io and create a free account
+        2. Create a new form and copy your form ID (looks like: xabcdefg)
+        3. Replace the action attribute below with: action="https://formspree.io/f/YOUR_ID"
+        4. Remove the method="POST" comment marker
+        5. Delete the e.preventDefault() line in js/main.js (or leave it — Formspree handles the redirect)
+      -->
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required autocomplete="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required autocomplete="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Reason for contact</label>
+          <select id="reason" name="reason">
+            <option value="">— Select —</option>
+            <option value="research">Research collaboration</option>
+            <option value="speaking">Speaking invitation</option>
+            <option value="media">Media enquiry</option>
+            <option value="general">General enquiry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send message</button>
+        <p class="form-note">I'll aim to respond within a few working days.</p>
+      </form>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Ko Brendon Ahau. Based in Aotearoa New Zealand.</p>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
