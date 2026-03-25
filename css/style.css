@@ -42,9 +42,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
-  max-width: var(--max-width);
-  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  max-width: 100%;
 }
 
 .site-title {
@@ -58,7 +57,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
