@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Ko Brendon Ahau</title>
-  <meta name="description" content="Get in touch." />
+  <meta name="description" content="Get in touch with Brendon." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -29,46 +29,39 @@
 </header>
 
 <div class="page-hero">
-  <div class="container">
-    <h1>Contact</h1>
-    <p>Get in touch</p>
+  <div class="page-hero-inner">
+    <span class="section-kicker" style="color:var(--green-light);">Kia kōrero</span>
+    <h1>Get in touch</h1>
+    <p>Research, speaking, collaboration, or just a kōrero — I'd love to hear from you</p>
   </div>
 </div>
 
-<main>
+<main class="page-content">
   <div class="container">
 
-    <section class="section">
-      <!-- EDIT: Update the intro text and your email address -->
-      <p>Whether you're interested in research collaboration, speaking invitations, media enquiries, or just want to connect — feel free to reach out.</p>
-      <p>You can also email directly: <a href="mailto:brendonmcintosh@gmail.com">brendonmcintosh@gmail.com</a></p>
-    </section>
+    <div class="content-section">
+      <p class="body-text" style="font-size:1.05rem;">Whether you're interested in research collaboration, speaking invitations, media enquiries, or just want to connect — feel free to reach out.</p>
+      <p class="body-text">Or email directly: <a href="mailto:brendonmcintosh@gmail.com"><strong>brendonmcintosh@gmail.com</strong></a></p>
+    </div>
 
-    <section class="section contact-form">
-      <h2>Send a message</h2>
-
+    <div class="content-section contact-form">
+      <h2 class="content-heading">Send a message</h2>
       <!--
-        HOW TO MAKE THIS FORM ACTUALLY SEND EMAILS:
-        1. Go to https://formspree.io and create a free account
-        2. Create a new form and copy your form ID (looks like: xabcdefg)
-        3. Replace the action attribute below with: action="https://formspree.io/f/YOUR_ID"
-        4. Remove the method="POST" comment marker
-        5. Delete the e.preventDefault() line in js/main.js (or leave it — Formspree handles the redirect)
+        TO MAKE THIS FORM SEND EMAILS:
+        1. Sign up at https://formspree.io with brendonmcintosh@gmail.com
+        2. Create a new form — copy your form ID (e.g. xabcdefg)
+        3. Replace YOUR_FORM_ID below with your actual ID
+        4. Remove the e.preventDefault() line in js/main.js
       -->
-      <form
-        action="https://formspree.io/f/YOUR_FORM_ID"
-        method="POST"
-      >
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div class="form-group">
           <label for="name">Your name</label>
           <input type="text" id="name" name="name" required autocomplete="name" />
         </div>
-
         <div class="form-group">
           <label for="email">Email address</label>
           <input type="email" id="email" name="email" required autocomplete="email" />
         </div>
-
         <div class="form-group">
           <label for="reason">Reason for contact</label>
           <select id="reason" name="reason">
@@ -79,16 +72,14 @@
             <option value="general">General enquiry</option>
           </select>
         </div>
-
         <div class="form-group">
           <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
         </div>
-
         <button type="submit" class="btn-submit">Send message</button>
         <p class="form-note">I'll aim to respond within a few working days.</p>
       </form>
-    </section>
+    </div>
 
   </div>
 </main>

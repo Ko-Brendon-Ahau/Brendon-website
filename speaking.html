@@ -29,63 +29,65 @@
 </header>
 
 <div class="page-hero">
-  <div class="container">
+  <div class="page-hero-inner">
+    <span class="section-kicker" style="color:var(--green-light);">Hāpori</span>
     <h1>Speaking &amp; Collaboration</h1>
     <p>Talks, media, and working together</p>
   </div>
 </div>
 
-<main>
+<main class="page-content">
   <div class="container">
 
-    <section class="section">
-      <h2>Speaking</h2>
-      <!-- EDIT: Describe the topics you speak on and the kinds of events you speak at -->
-      <p>[Describe the topics you speak on — e.g. Māori health equity, kaupapa Māori research, community pharmacy, natural health — and the kinds of events you're available for: conferences, community events, panels, podcasts, etc.]</p>
-      <p>To invite me to speak, <a href="contact.html">get in touch</a>.</p>
-    </section>
+    <div class="content-section">
+      <h2 class="content-heading">Speaking</h2>
+      <!-- EDIT: Describe the topics you speak on -->
+      <p class="body-text">[Describe the topics you speak on — e.g. Māori health equity, kaupapa Māori research, community pharmacy, natural health — and the kinds of events you're available for: conferences, community events, panels, podcasts, etc.]</p>
+      <p class="body-text">To invite me to speak, <a href="contact.html">get in touch</a>.</p>
+    </div>
 
-    <section class="section">
-      <h2>Past talks &amp; appearances</h2>
-      <!-- EDIT: Add entries for past speaking engagements. Copy the org-entry block to add more. -->
-
-      <div class="org-entry">
+    <div class="content-section">
+      <h2 class="content-heading">Past Talks &amp; Appearances</h2>
+      <!-- EDIT: Copy the org-card block to add more -->
+      <div class="org-card">
         <h3>[Event or talk title]</h3>
         <p><em>[Event name / organisation], [Year]</em></p>
         <p>[Brief description of the talk or panel.]</p>
-        <!-- Optional: <a href="#" class="org-link" target="_blank" rel="noopener">Watch / Listen →</a> -->
       </div>
-
-      <div class="org-entry">
+      <div class="org-card">
         <h3>[Event or talk title]</h3>
         <p><em>[Event name / organisation], [Year]</em></p>
         <p>[Description.]</p>
       </div>
+    </div>
 
-    </section>
-
-    <section class="section">
-      <h2>Collaboration</h2>
+    <div class="content-section">
+      <h2 class="content-heading">Collaboration</h2>
       <!-- EDIT: Describe the kinds of collaborations you're open to -->
-      <p>[Describe the kinds of collaborations you're open to — research partnerships, community projects, media, advisory roles, etc.]</p>
-      <p><a href="contact.html">Reach out to discuss →</a></p>
-    </section>
+      <p class="body-text">[Describe the kinds of collaborations you're open to — research partnerships, community projects, media, advisory roles, etc.]</p>
+      <a href="contact.html" class="card-link">Reach out to discuss →</a>
+    </div>
 
-    <section class="section">
-      <h2>Media</h2>
-      <!-- EDIT: Add media appearances — interviews, podcasts, news articles -->
-
-      <div class="org-entry">
+    <div class="content-section">
+      <h2 class="content-heading">Media</h2>
+      <!-- EDIT: Add media appearances -->
+      <div class="org-card">
         <h3>[Media title or interview]</h3>
         <p><em>[Publication / outlet], [Year]</em></p>
         <p>[Description.]</p>
-        <!-- Optional: <a href="#" class="org-link" target="_blank" rel="noopener">Read / Watch →</a> -->
       </div>
-
-    </section>
+    </div>
 
   </div>
 </main>
+
+<section class="connect-section">
+  <div class="container">
+    <h2>Let's work together</h2>
+    <p>Speaking invitations, media enquiries, or collaboration — I'd love to hear from you.</p>
+    <a href="contact.html" class="btn btn-primary">Get in touch</a>
+  </div>
+</section>
 
 <footer>
   <p>&copy; <span id="year"></span> Ko Brendon Ahau. Based in Aotearoa New Zealand.</p>
