@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Writing — Ko Brendon Ahau</title>
-  <meta name="description" content="Articles, essays, and reports on Māori health, research, and community." />
+  <meta name="description" content="Articles, reflections, and research translation on Māori health and hauora." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<header>
-  <div class="nav-inner">
-    <a href="index.html" class="site-title">Ko Brendon Ahau</a>
-    <button class="menu-toggle" aria-label="Open menu">
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">Ko Brendon Ahau</a>
+    <button class="nav-toggle" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
-    <nav>
+    <nav class="site-nav">
       <ul>
-        <li><a href="index.html">Kaika/Home</a></li>
-        <li><a href="about.html">Ko Wai Au</a></li>
-        <li><a href="work.html">Kaupapa</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ko-wai-au.html">Ko Wai Au</a></li>
+        <li><a href="kaupapa.html">Kaupapa</a></li>
         <li><a href="writing.html">Writing</a></li>
         <li><a href="speaking.html">Speaking</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -30,61 +30,58 @@
 
 <div class="page-hero">
   <div class="page-hero-inner">
-    <span class="section-kicker" style="color:var(--green-light);">Tuhituhi</span>
+    <span class="label">Tuhituhi</span>
     <h1>Writing</h1>
-    <p>Articles, essays, and reports</p>
+    <p class="sub">Reflections, research translation, and thinking out loud about hauora.</p>
   </div>
 </div>
 
-<main class="page-content">
-  <div class="container">
+<main class="page-body">
+  <div class="wrap-text">
 
-    <div class="content-section">
-      <!-- EDIT: Brief intro to your writing -->
-      <p class="body-text" style="font-size:1.1rem;">[A short intro to your writing — what topics you write about, where you publish, and who you're writing for.]</p>
+    <div class="prose" style="margin-bottom: 2.5rem;">
+      <p>I write to make sense of things — and to share that sense-making with others. The topics tend to circle around Māori health, systems thinking, medicines, natural health, and what it means to pursue pae ora in practice.</p>
+      <p>Some pieces are research translation. Some are reflections. Some are just things I needed to work through in writing.</p>
     </div>
 
-    <div class="content-section">
-      <h2 class="content-heading">Articles &amp; Essays</h2>
-      <!-- EDIT: Copy the org-card block to add more pieces -->
-      <div class="org-card">
-        <h3>[Article or essay title]</h3>
-        <p><em>[Publication name], [Year]</em></p>
-        <p>[One or two sentences describing what the piece is about.]</p>
-        <a href="#" class="org-link" target="_blank" rel="noopener">Read →</a>
-      </div>
-      <div class="org-card">
-        <h3>[Article or essay title]</h3>
-        <p><em>[Publication name], [Year]</em></p>
+    <!-- EDIT: Add articles here. Copy the article-item block to add more. -->
+    <ul class="article-list">
+
+      <li class="article-item">
+        <h3>[Article title]</h3>
+        <p class="meta">[Category] &nbsp;·&nbsp; [Month Year]</p>
+        <p>[One or two sentences describing what the piece is about and why it matters.]</p>
+        <a href="#" class="read-link">Read →</a>
+      </li>
+
+      <li class="article-item">
+        <h3>[Article title]</h3>
+        <p class="meta">[Category] &nbsp;·&nbsp; [Month Year]</p>
         <p>[Description.]</p>
-        <a href="#" class="org-link" target="_blank" rel="noopener">Read →</a>
-      </div>
-    </div>
+        <a href="#" class="read-link">Read →</a>
+      </li>
 
-    <div class="content-section">
-      <h2 class="content-heading">Reports &amp; Other Outputs</h2>
-      <!-- EDIT: Add reports, policy documents, or other written outputs -->
-      <div class="org-card">
-        <h3>[Report title]</h3>
-        <p><em>[Organisation / context], [Year]</em></p>
+      <li class="article-item">
+        <h3>[Article title]</h3>
+        <p class="meta">[Category] &nbsp;·&nbsp; [Month Year]</p>
         <p>[Description.]</p>
-      </div>
-    </div>
+        <a href="#" class="read-link">Read →</a>
+      </li>
+
+    </ul>
 
   </div>
 </main>
 
-<section class="connect-section">
-  <div class="container">
-    <h2>Want to read more?</h2>
-    <p>Get in touch if you'd like to discuss any of my writing or commission a piece.</p>
-    <a href="contact.html" class="btn btn-primary">Contact me</a>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; <span id="year"></span> Ko Brendon Ahau. Based in Aotearoa New Zealand.</p>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<footer class="site-footer">
+  <p>Ko Brendon Ahau — Aotearoa New Zealand</p>
+  <p style="margin-top:0.4rem;">
+    <a href="contact.html">Contact</a> &nbsp;·&nbsp;
+    <a href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener">YouTube</a> &nbsp;·&nbsp;
+    <a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a>
+  </p>
+  <p style="margin-top:0.75rem;">&copy; <span id="yr"></span> Ko Brendon Ahau</p>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </footer>
 
 <script src="js/main.js"></script>

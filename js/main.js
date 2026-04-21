@@ -1,33 +1,26 @@
-// ===== MOBILE MENU =====
-const toggle = document.querySelector('.menu-toggle');
-const navUl  = document.querySelector('nav ul');
-
+// Mobile nav toggle
+const toggle = document.querySelector('.nav-toggle');
+const navUl  = document.querySelector('.site-nav ul');
 if (toggle && navUl) {
-  toggle.addEventListener('click', () => {
-    navUl.classList.toggle('open');
-  });
+  toggle.addEventListener('click', () => navUl.classList.toggle('open'));
 }
 
-// ===== ACTIVE NAV LINK =====
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('nav a').forEach(link => {
-  const href = link.getAttribute('href');
-  if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-    link.classList.add('active');
+// Active nav link
+const page = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.site-nav a').forEach(a => {
+  if (a.getAttribute('href') === page || a.getAttribute('href') === '../' + page) {
+    a.classList.add('active');
   }
 });
 
-// ===== CONTACT FORM (basic client-side handling) =====
-// To make the form actually send emails, replace this with a service like
-// Formspree (https://formspree.io) — just update the form action attribute.
-const form = document.querySelector('.contact-form form');
+// Contact form placeholder
+const form = document.querySelector('form.contact-form');
 if (form) {
-  form.addEventListener('submit', (e) => {
-    // If using Formspree or similar, remove the preventDefault below
-    // and set form action="https://formspree.io/f/YOUR_ID" method="POST"
+  form.addEventListener('submit', e => {
+    // Remove this preventDefault once Formspree is configured
     e.preventDefault();
     const btn = form.querySelector('.btn-submit');
-    btn.textContent = 'Message sent — thank you!';
+    btn.textContent = 'Sent — ngā mihi!';
     btn.disabled = true;
     form.reset();
   });

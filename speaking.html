@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Speaking &amp; Collaboration — Ko Brendon Ahau</title>
-  <meta name="description" content="Speaking engagements, media, and collaboration opportunities." />
+  <title>Speaking — Ko Brendon Ahau</title>
+  <meta name="description" content="Speaking engagements, topics, and collaboration opportunities." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<header>
-  <div class="nav-inner">
-    <a href="index.html" class="site-title">Ko Brendon Ahau</a>
-    <button class="menu-toggle" aria-label="Open menu">
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">Ko Brendon Ahau</a>
+    <button class="nav-toggle" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
-    <nav>
+    <nav class="site-nav">
       <ul>
-        <li><a href="index.html">Kaika/Home</a></li>
-        <li><a href="about.html">Ko Wai Au</a></li>
-        <li><a href="work.html">Kaupapa</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ko-wai-au.html">Ko Wai Au</a></li>
+        <li><a href="kaupapa.html">Kaupapa</a></li>
         <li><a href="writing.html">Writing</a></li>
         <li><a href="speaking.html">Speaking</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -30,68 +30,74 @@
 
 <div class="page-hero">
   <div class="page-hero-inner">
-    <span class="section-kicker" style="color:var(--green-light);">Hāpori</span>
-    <h1>Speaking &amp; Collaboration</h1>
-    <p>Talks, media, and working together</p>
+    <span class="label">Kōrero</span>
+    <h1>Speaking</h1>
+    <p class="sub">Sharing ideas, starting conversations, and contributing to the spaces where change happens.</p>
   </div>
 </div>
 
-<main class="page-content">
-  <div class="container">
+<main class="page-body">
+  <div class="wrap-text">
+    <div class="prose">
 
-    <div class="content-section">
-      <h2 class="content-heading">Speaking</h2>
-      <!-- EDIT: Describe the topics you speak on -->
-      <p class="body-text">[Describe the topics you speak on — e.g. Māori health equity, kaupapa Māori research, community pharmacy, natural health — and the kinds of events you're available for: conferences, community events, panels, podcasts, etc.]</p>
-      <p class="body-text">To invite me to speak, <a href="contact.html">get in touch</a>.</p>
-    </div>
+      <h2>Speaking style and kaupapa</h2>
+      <!-- EDIT: Describe your speaking style -->
+      <p>[Describe your speaking style — grounded, accessible, evidence-informed, etc. — and the kinds of audiences and events you speak at.]</p>
+      <p>To invite me to speak, <a href="contact.html">get in touch</a>.</p>
 
-    <div class="content-section">
-      <h2 class="content-heading">Past Talks &amp; Appearances</h2>
-      <!-- EDIT: Copy the org-card block to add more -->
+      <h2>Key topics</h2>
+      <ul>
+        <li>Māori health equity — systems, not individuals</li>
+        <li>Indigenous models of diabetes care</li>
+        <li>Medicines, natural health, and hauora</li>
+        <li>Community pharmacy and meeting whānau where they are</li>
+        <li>Kaupapa Māori research in practice</li>
+        <li>Governance and systems change</li>
+      </ul>
+
+      <h2>Past talks & appearances</h2>
+      <!-- EDIT: Add speaking engagements here -->
       <div class="org-card">
         <h3>[Event or talk title]</h3>
-        <p><em>[Event name / organisation], [Year]</em></p>
-        <p>[Brief description of the talk or panel.]</p>
+        <p><em>[Event / organisation], [Year]</em></p>
+        <p>[Brief description.]</p>
       </div>
       <div class="org-card">
         <h3>[Event or talk title]</h3>
-        <p><em>[Event name / organisation], [Year]</em></p>
-        <p>[Description.]</p>
+        <p><em>[Event / organisation], [Year]</em></p>
+        <p>[Brief description.]</p>
       </div>
-    </div>
 
-    <div class="content-section">
-      <h2 class="content-heading">Collaboration</h2>
-      <!-- EDIT: Describe the kinds of collaborations you're open to -->
-      <p class="body-text">[Describe the kinds of collaborations you're open to — research partnerships, community projects, media, advisory roles, etc.]</p>
-      <a href="contact.html" class="card-link">Reach out to discuss →</a>
-    </div>
-
-    <div class="content-section">
-      <h2 class="content-heading">Media</h2>
-      <!-- EDIT: Add media appearances -->
+      <h2>Media</h2>
+      <!-- EDIT: Add media appearances here -->
       <div class="org-card">
-        <h3>[Media title or interview]</h3>
+        <h3>[Media appearance or interview]</h3>
         <p><em>[Publication / outlet], [Year]</em></p>
         <p>[Description.]</p>
       </div>
-    </div>
 
+    </div>
   </div>
 </main>
 
-<section class="connect-section">
-  <div class="container">
-    <h2>Let's work together</h2>
-    <p>Speaking invitations, media enquiries, or collaboration — I'd love to hear from you.</p>
-    <a href="contact.html" class="btn btn-primary">Get in touch</a>
+<div class="kaupapa-band">
+  <div class="wrap">
+    <p>Interested in a speaking engagement or collaboration?</p>
+    <p style="margin-top:1.25rem;font-style:normal;">
+      <a href="contact.html" class="btn btn-gold" style="font-style:normal;">Get in touch →</a>
+    </p>
   </div>
-</section>
+</div>
 
-<footer>
-  <p>&copy; <span id="year"></span> Ko Brendon Ahau. Based in Aotearoa New Zealand.</p>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<footer class="site-footer">
+  <p>Ko Brendon Ahau — Aotearoa New Zealand</p>
+  <p style="margin-top:0.4rem;">
+    <a href="contact.html">Contact</a> &nbsp;·&nbsp;
+    <a href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener">YouTube</a> &nbsp;·&nbsp;
+    <a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a>
+  </p>
+  <p style="margin-top:0.75rem;">&copy; <span id="yr"></span> Ko Brendon Ahau</p>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </footer>
 
 <script src="js/main.js"></script>
