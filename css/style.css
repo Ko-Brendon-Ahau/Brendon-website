@@ -718,3 +718,338 @@ textarea { resize: vertical; min-height: 130px; }
   :root { --space-xl: 4rem; --space-lg: 2.5rem; }
   .pou-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================
+   HERO — updated for hub positioning
+   ============================================ */
+.hero-positioning {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: 0.75rem;
+}
+
+.hero-gateway {
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.6);
+  max-width: 480px;
+  line-height: 1.65;
+  margin-bottom: var(--space-md);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.hero-intro-text h1 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: var(--white);
+  margin-bottom: 0.6rem;
+}
+
+/* ============================================
+   ECOSYSTEM BAND
+   ============================================ */
+.ecosystem-band {
+  background: var(--stone);
+  padding: var(--space-lg) 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.ecosystem-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.ecosystem-text p {
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  line-height: 1.8;
+  max-width: 480px;
+  margin-bottom: 0.75rem;
+}
+
+.ecosystem-text p em {
+  color: var(--moss);
+  font-style: italic;
+}
+
+/* Minimal node diagram */
+.ecosystem-nodes {
+  position: relative;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eco-node {
+  position: absolute;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.eco-node--center {
+  width: 72px;
+  height: 72px;
+  background: var(--moss);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 0.72rem;
+  z-index: 2;
+  box-shadow: 0 0 0 8px rgba(30,138,74,0.12);
+}
+
+.eco-node--1,
+.eco-node--2,
+.eco-node--3,
+.eco-node--4,
+.eco-node--5,
+.eco-node--6 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  color: var(--text-mid);
+  font-size: 0.62rem;
+}
+
+.eco-node--1 { top: 10px;  left: 50%; transform: translateX(-50%); }
+.eco-node--2 { top: 30px;  right: 10%; }
+.eco-node--3 { bottom: 30px; right: 10%; }
+.eco-node--4 { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.eco-node--5 { bottom: 30px; left: 10%; }
+.eco-node--6 { top: 30px;  left: 10%; }
+
+/* ============================================
+   PATHWAYS (hub-and-spoke cards)
+   ============================================ */
+.pathways-section {
+  padding: var(--space-xl) 0;
+  background: var(--cream);
+}
+
+.pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.pathway-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.6rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.pathway-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--fern);
+  text-decoration: none;
+}
+
+.pathway-card--external::after {
+  content: ' ↗';
+  font-size: 0.75rem;
+  color: var(--text-soft);
+}
+
+.pathway-icon {
+  font-size: 1.1rem;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.pathway-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.pathway-card p {
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 1.1rem;
+}
+
+.pathway-link {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--moss);
+  transition: color 0.2s;
+}
+
+.pathway-card:hover .pathway-link {
+  color: var(--fern);
+}
+
+/* ============================================
+   AUDIENCE NAVIGATION
+   ============================================ */
+.audience-section {
+  padding: var(--space-lg) 0;
+  background: var(--mist);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: var(--space-md);
+}
+
+.audience-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.audience-card:hover {
+  border-color: var(--moss);
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+.audience-card h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--moss);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.01em;
+}
+
+.audience-card p {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+
+/* ============================================
+   CURRENT MAHI
+   ============================================ */
+.current-mahi-section {
+  padding: var(--space-xl) 0;
+  background: var(--cream);
+}
+
+.mahi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.mahi-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-left: 3px solid var(--moss);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.mahi-card:hover {
+  box-shadow: var(--shadow);
+}
+
+.mahi-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.mahi-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.mahi-card p {
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.mahi-link {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--moss);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.mahi-link:hover {
+  color: var(--fern);
+  text-decoration: none;
+}
+
+/* ============================================
+   RESPONSIVE — new sections
+   ============================================ */
+@media (max-width: 768px) {
+  .ecosystem-inner {
+    grid-template-columns: 1fr;
+  }
+  .ecosystem-nodes {
+    display: none;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .pathways-grid,
+  .mahi-grid { grid-template-columns: 1fr; }
+  .audience-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 420px) {
+  .audience-grid { grid-template-columns: 1fr; }
+}
